@@ -9,7 +9,7 @@ pages.each(function(i) {
 
 $(window).load(function() {
   
-  $('.page').click(function() {
+  $('.page').on('click', function() {
     var page = $(this);
     var page_num = pages.index(page) + 1;
     if (page_num % 2 === 0) {
@@ -20,20 +20,6 @@ $(window).load(function() {
       page.next().addClass('flipped');
     }
   });
-
-  // $('#tumblr i').mousedown();
-
-  // $('h1').click(function() {
-  //   var page = $(this).parent('.page');
-  //   var page_num = pages.index(page) + 1;
-  //   if (page_num % 2 === 0) {
-  //     page.removeClass('flipped');
-  //     page.prev().removeClass('flipped');
-  //   } else {
-  //     page.addClass('flipped');
-  //     page.next().addClass('flipped');
-  //   }
-  // });
   
   $('.book').addClass('bound');
 });

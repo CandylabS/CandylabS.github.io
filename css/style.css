@@ -163,6 +163,26 @@ body {
 .author {
   text-align: center;
 }
+.varidada {
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+}
+.starry {
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+}
+.lollipop {
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+}
+.bouncing {
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+}
 .material-icons.md-16 { font-size: 16px; }
 .material-icons.md-love { color: #ff7761; }
 .page {
@@ -183,12 +203,7 @@ body {
 .page:nth-child(15),
 .page:nth-child(17),
 .page:nth-child(19),
-.page:nth-child(21),
-.page:nth-child(23),
-.page:nth-child(25),
-.page:nth-child(27),
-.page:nth-child(29),
-.page:nth-child(31) {
+.page:nth-child(21){
   background-position: center;
   
 }
@@ -255,6 +270,6 @@ body {
 .page:nth-child(31) {
   background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_end_02.jpg');
 }*/
-.page:nth-child(32) {
+.page:nth-child(22) {
   background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_cover_b.jpg');
 }
