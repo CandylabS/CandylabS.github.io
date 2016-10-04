@@ -171,8 +171,8 @@ a.global-button {
 
 /* line 161, ../sass/style.scss */
 .bound {
-  -webkit-perspective: 250vw;
-  perspective: 500vw;
+  -webkit-perspective: 400vw;
+  perspective: 400vw;
 }
 /* line 164, ../sass/style.scss */
 .bound .pages {
@@ -362,87 +362,83 @@ body {
   /*color: transparent;*/
   color: black;
   background-color: #FFFDF7;
-  background-image: url("https://www.transparenttextures.com/patterns/sprinkles.png");
-  /* https://www.transparenttextures.com/patterns/stardust.png */
-  /*background: center no-repeat;*/
-  /*background-size: contain;*/
+  background-image: url("https://candylabs.github.io/images/sprinkles.png");
 }
-/* line 340, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .page:nth-child(3), .page:nth-child(5), .page:nth-child(7), .page:nth-child(9), .page:nth-child(11), .page:nth-child(13), .page:nth-child(15), .page:nth-child(17), .page:nth-child(19), .page:nth-child(21) {
   background-position: center;
 }
-/* line 343, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .page:nth-child(1) {
   background-color: transparent;
-  /*background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_cover_f.jpg');*/
 }
-/* line 347, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .page:nth-child(2), .page:nth-child(3) {
   background-color: #FFFDF7;
   /* #676161 */
 }
-/* line 351, ../sass/style.scss */
+/* line 347, ../sass/style.scss */
 .page:nth-child(4), .page:nth-child(5) {
   background-color: #74706F;
 }
-/* line 354, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 .page:nth-child(6), .page:nth-child(7) {
   background-color: #7F7B7A;
 }
-/* line 357, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .page:nth-child(8), .page:nth-child(9) {
   background-color: #9C9C9A;
 }
-/* line 360, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 .page:nth-child(10), .page:nth-child(11) {
   background-color: #B9B2A1;
 }
-/* line 363, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 .page:nth-child(12), .page:nth-child(13), .page:nth-child(14), .page:nth-child(15) {
   background-color: #FFFDF7;
 }
-/* line 366, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
 .page:nth-child(16), .page:nth-child(17) {
   background-color: #B5BBC8;
 }
-/* line 369, ../sass/style.scss */
+/* line 365, ../sass/style.scss */
 .page:nth-child(18), .page:nth-child(19) {
   background-color: #A3A7B3;
 }
-/* line 372, ../sass/style.scss */
+/* line 368, ../sass/style.scss */
 .page:nth-child(20), .page:nth-child(21) {
   background-color: #8A8598;
 }
-/* line 375, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 .page:nth-child(22) {
   background-color: transparent;
-  /*background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_cover_b.jpg');*/
 }
 
 /* --- Sections --- */
-/* line 384, ../sass/style.scss */
+/* line 379, ../sass/style.scss */
 #about {
+  padding-left: 14%;
   padding-top: 2em;
 }
 
-/* line 387, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 #portfolio {
   padding-top: 5em;
 }
 
 /*** About Section ***/
-/* line 392, ../sass/style.scss */
+/* line 388, ../sass/style.scss */
 .instruction {
   margin-top: 7%;
   margin-left: 45%;
 }
 
-/* line 397, ../sass/style.scss */
+/* line 393, ../sass/style.scss */
 #about {
   display: flex;
   min-height: 100vh;
 }
-/* line 400, ../sass/style.scss */
+/* line 396, ../sass/style.scss */
 #about .wrapper {
   max-width: 80%;
   margin: auto;
@@ -450,12 +446,12 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* line 408, ../sass/style.scss */
+  /* line 404, ../sass/style.scss */
   #about .wrapper {
     margin-right: 24%;
   }
 }
-/* line 413, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
 .about__intro {
   border-left: 2px solid;
   padding-left: 2.2em;
@@ -463,7 +459,7 @@ body {
   max-width: 25em;
 }
 
-/* line 420, ../sass/style.scss */
+/* line 416, ../sass/style.scss */
 #about:hover .global-button.rotated::before {
   animation: move_arrow_v 2500ms ease-in infinite forwards;
 }
@@ -493,27 +489,27 @@ body {
 }
 /*** Portfolio Section ***/
 /* Filters */
-/* line 458, ../sass/style.scss */
+/* line 454, ../sass/style.scss */
 #portfolio > .filters {
   margin-right: 10%;
   text-align: right;
   padding: 0 20px;
 }
 
-/* line 464, ../sass/style.scss */
+/* line 460, ../sass/style.scss */
 .filters__title {
   display: inline-block;
   vertical-align: baseline;
   color: #676161;
 }
 
-/* line 470, ../sass/style.scss */
+/* line 466, ../sass/style.scss */
 .filters__list {
   display: inline-block;
   vertical-align: baseline;
 }
 
-/* line 475, ../sass/style.scss */
+/* line 471, ../sass/style.scss */
 .filters__label {
   font-family: "Poiret One", cursive;
   color: rgba(103, 97, 97, 0.3);
@@ -522,22 +518,22 @@ body {
   margin-left: .8em;
   cursor: pointer;
 }
-/* line 478, ../sass/style.scss */
+/* line 474, ../sass/style.scss */
 .filters__label:not(:first-child)::before {
   color: #ECE9E6;
 }
-/* line 485, ../sass/style.scss */
+/* line 481, ../sass/style.scss */
 .filters__label.is-active {
   color: #676161;
 }
-/* line 488, ../sass/style.scss */
+/* line 484, ../sass/style.scss */
 .filters__label:not(:first-child)::before {
   content: "/";
   margin-right: .8em;
 }
 
 /* Projects */
-/* line 496, ../sass/style.scss */
+/* line 492, ../sass/style.scss */
 .portfolio__project-wrapper {
   padding: 0 10px;
   margin-top: 2%;
@@ -548,7 +544,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* line 506, ../sass/style.scss */
+/* line 502, ../sass/style.scss */
 .portfolio__project {
   position: relative;
   margin-left: 30px;
@@ -557,25 +553,26 @@ body {
   height: auto;
   padding: 0;
   background-color: #ECE9E6;
+  background-image: url("https://candylabs.github.io/images/sandpaper.png");
   background-clip: padding-box;
   overflow: hidden;
   border-radius: 5px 30px 5px 5px;
   box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* line 521, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
 .portfolio__project__preview {
   position: relative;
   top: 0;
   height: auto;
 }
-/* line 525, ../sass/style.scss */
+/* line 522, ../sass/style.scss */
 .portfolio__project__preview > img {
   width: 100%;
   height: auto;
 }
 
-/* line 531, ../sass/style.scss */
+/* line 528, ../sass/style.scss */
 .portfolio__project__description {
   position: absolute;
   top: 100%;
@@ -585,7 +582,7 @@ body {
   background: #e3dfd8;
 }
 
-/* line 540, ../sass/style.scss */
+/* line 537, ../sass/style.scss */
 .portfolio__project__name {
   font-family: 'Raleway', sans-serif;
   font-size: 1.1em;
@@ -593,23 +590,23 @@ body {
   margin-bottom: .2em;
 }
 
-/* line 547, ../sass/style.scss */
+/* line 544, ../sass/style.scss */
 .portfolio__project__category {
   font-size: .9em;
   color: #dcd5b2;
   margin-bottom: .6em;
 }
 
-/* line 553, ../sass/style.scss */
+/* line 550, ../sass/style.scss */
 .portfolio__project__preview, .portfolio__project__description {
   transition: all 600ms ease;
 }
 
-/* line 558, ../sass/style.scss */
+/* line 555, ../sass/style.scss */
 .portfolio__project:hover .portfolio__project__description {
   transform: translateY(-100%);
 }
-/* line 561, ../sass/style.scss */
+/* line 558, ../sass/style.scss */
 .portfolio__project:hover .portfolio__project__preview {
   transform: translateY(-2.5em);
 }
