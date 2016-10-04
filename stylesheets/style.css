@@ -433,7 +433,7 @@ body {
 /*** About Section ***/
 /* line 392, ../sass/style.scss */
 .instruction {
-  margin-top: 5%;
+  margin-top: 7%;
   margin-left: 45%;
 }
 
@@ -495,16 +495,16 @@ body {
 /* Filters */
 /* line 458, ../sass/style.scss */
 #portfolio > .filters {
+  margin-right: 10%;
   text-align: right;
   padding: 0 20px;
 }
 
-/* line 463, ../sass/style.scss */
+/* line 464, ../sass/style.scss */
 .filters__title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
   display: inline-block;
   vertical-align: baseline;
+  color: #676161;
 }
 
 /* line 470, ../sass/style.scss */
@@ -515,56 +515,67 @@ body {
 
 /* line 475, ../sass/style.scss */
 .filters__label {
-  color: #dcd5b2;
+  font-family: "Poiret One", cursive;
+  color: rgba(103, 97, 97, 0.3);
   display: inline-block;
   position: relative;
   margin-left: .8em;
   cursor: pointer;
 }
-/* line 477, ../sass/style.scss */
+/* line 478, ../sass/style.scss */
 .filters__label:not(:first-child)::before {
-  color: #dcd5b2;
+  color: #ECE9E6;
 }
-/* line 484, ../sass/style.scss */
+/* line 485, ../sass/style.scss */
 .filters__label.is-active {
-  color: inherit;
+  color: #676161;
 }
-/* line 487, ../sass/style.scss */
+/* line 488, ../sass/style.scss */
 .filters__label:not(:first-child)::before {
   content: "/";
   margin-right: .8em;
 }
 
 /* Projects */
-/* line 495, ../sass/style.scss */
+/* line 496, ../sass/style.scss */
 .portfolio__project-wrapper {
   padding: 0 10px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 12%;
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* line 499, ../sass/style.scss */
+/* line 506, ../sass/style.scss */
 .portfolio__project {
   position: relative;
+  margin-left: 30px;
+  margin-bottom: 4%;
+  width: 200px;
   height: auto;
   padding: 0;
   background-color: #ECE9E6;
   background-clip: padding-box;
-  border: 10px solid transparent;
   overflow: hidden;
+  border-radius: 5px 30px 5px 5px;
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* line 509, ../sass/style.scss */
+/* line 521, ../sass/style.scss */
 .portfolio__project__preview {
   position: relative;
   top: 0;
   height: auto;
 }
-/* line 513, ../sass/style.scss */
+/* line 525, ../sass/style.scss */
 .portfolio__project__preview > img {
   width: 100%;
   height: auto;
 }
 
-/* line 519, ../sass/style.scss */
+/* line 531, ../sass/style.scss */
 .portfolio__project__description {
   position: absolute;
   top: 100%;
@@ -574,7 +585,7 @@ body {
   background: #e3dfd8;
 }
 
-/* line 528, ../sass/style.scss */
+/* line 540, ../sass/style.scss */
 .portfolio__project__name {
   font-family: 'Raleway', sans-serif;
   font-size: 1.1em;
@@ -582,23 +593,23 @@ body {
   margin-bottom: .2em;
 }
 
-/* line 535, ../sass/style.scss */
+/* line 547, ../sass/style.scss */
 .portfolio__project__category {
   font-size: .9em;
   color: #dcd5b2;
   margin-bottom: .6em;
 }
 
-/* line 541, ../sass/style.scss */
+/* line 553, ../sass/style.scss */
 .portfolio__project__preview, .portfolio__project__description {
   transition: all 600ms ease;
 }
 
-/* line 546, ../sass/style.scss */
+/* line 558, ../sass/style.scss */
 .portfolio__project:hover .portfolio__project__description {
   transform: translateY(-100%);
 }
-/* line 549, ../sass/style.scss */
+/* line 561, ../sass/style.scss */
 .portfolio__project:hover .portfolio__project__preview {
   transform: translateY(-2.5em);
 }

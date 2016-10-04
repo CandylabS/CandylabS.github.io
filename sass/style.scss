@@ -1,6 +1,6 @@
 $font-cover: 'Special Elite', cursive;
 $font-author: 'Special Elite', cursive;
-$font-text: 'Averia Serif Libre', cursive;  //multi-size: 300/400/700
+$font-text: 'Poiret One', cursive;//'Averia Serif Libre', cursive;  //multi-size: 300/400/700
 $font-project: 'Bungee Hairline', cursive;
 $font-highlight: 'Londrina Shadow', cursive;
 
@@ -390,7 +390,7 @@ body {
 
 /*** About Section ***/
 .instruction {
-  margin-top: 5%;
+  margin-top: 7%;
   margin-left: 45%;
 }
 
@@ -456,15 +456,15 @@ body {
 /* Filters */
 
 #portfolio > .filters {
+  margin-right: 10%;
   text-align: right;
   padding: 0 20px;
 }
 
 .filters__title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
   display: inline-block;
   vertical-align: baseline;
+  color: #676161;
 }
 
 .filters__list {
@@ -473,16 +473,17 @@ body {
 }
 
 .filters__label {
-  color: #dcd5b2;
+  font-family: $font-text;
+  color: transparentize(#676161, 0.7);
   &:not(:first-child)::before {
-    color: #dcd5b2;
+    color: #ECE9E6;
   }
   display: inline-block;
   position: relative;
   margin-left: .8em;
   cursor: pointer;
   &.is-active {
-    color: inherit;
+    color: #676161;
   }
   &:not(:first-child)::before {
     content: "/";
@@ -494,16 +495,27 @@ body {
 
 .portfolio__project-wrapper {
   padding: 0 10px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 12%;
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio__project {
   position: relative;
+  margin-left: 30px;
+  margin-bottom: 4%;
+  width: 200px;
   height: auto;
   padding: 0;
   background-color: #ECE9E6;
   background-clip: padding-box;
-  border: 10px solid transparent;
+  // border: 10px solid transparent;
   overflow: hidden;
+  border-radius: 5px 30px 5px 5px;
+  box-shadow: 0 2px 2px 0px rgba(0,0,0,.1);
 }
 
 .portfolio__project__preview {
