@@ -67,34 +67,35 @@ a:hover, a:active, a:visited {
 /* line 65, ../sass/style.scss */
 a.global-button, .heading {
   font-size: 1.7em;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Londrina Shadow", cursive;
+  letter-spacing: 2px;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 a.global-button {
   text-transform: uppercase;
-  color: #9C9C9A;
+  color: #7F7B7A;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .heading {
   text-transform: uppercase;
-  color: #9C9C9A;
+  color: #7F7B7A;
   margin: 0;
   margin-bottom: 2em;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .header__social-btns > li > a:hover, .filters__label:hover {
   color: #74706F;
 }
 
-/* line 86, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .header__social-btns > li > a, .filters__label {
   transition: all 250ms linear;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .global-button::before {
   content: "";
   height: 1em;
@@ -103,18 +104,18 @@ a.global-button {
   position: relative;
   top: .2em;
   bottom: 0;
-  background: url("https://eevu.github.io/img/arrow.svg") no-repeat;
+  background: url("https://candylabs.github.io/images/arrow.svg") no-repeat;
   background-position: center;
   background-size: cover;
 }
-/* line 103, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .global-button.rotated::before {
   transform: rotate(90deg);
   left: -.5em;
 }
 
 /*** Header ***/
-/* line 111, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 .header {
   padding: 1.5em 6% 1em;
   position: fixed;
@@ -124,35 +125,35 @@ a.global-button {
 }
 
 @media (min-width: 920px) {
-  /* line 120, ../sass/style.scss */
+  /* line 121, ../sass/style.scss */
   .header {
     padding-left: 6em;
     padding-right: 6em;
   }
 }
 /* Social Links */
-/* line 129, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .header__social-btns {
   text-align: right;
 }
-/* line 131, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .header__social-btns > li {
   display: inline-block;
 }
-/* line 133, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .header__social-btns > li > a {
   position: relative;
   padding: 5px;
 }
 
 /* Graphic Book */
-/* line 141, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .book {
   -webkit-transition: opacity 0.4s 0.2s;
   transition: opacity 0.4s 0.2s;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .page {
   width: 36vw;
   height: 27vw;
@@ -160,21 +161,21 @@ a.global-button {
   float: left;
   margin-bottom: 0.5em;
 }
-/* line 152, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .page:first-child {
   float: right;
 }
-/* line 155, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .page:nth-child(even) {
   clear: both;
 }
 
-/* line 160, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .bound {
   -webkit-perspective: 250vw;
   perspective: 500vw;
 }
-/* line 163, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .bound .pages {
   width: 72vw;
   height: 27vw;
@@ -188,7 +189,7 @@ a.global-button {
   border-radius: 4px;
   box-shadow: 0 0 0 1px #e3dfd8;
 }
-/* line 176, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .bound .page {
   float: none;
   clear: none;
@@ -213,7 +214,7 @@ a.global-button {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 199, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .bound .page:before {
   content: '';
   position: absolute;
@@ -226,7 +227,7 @@ a.global-button {
   transition: background 0.7s;
   z-index: 2;
 }
-/* line 211, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .bound .page:nth-child(odd) {
   pointer-events: all;
   -webkit-transform: rotateY(0deg);
@@ -234,20 +235,20 @@ a.global-button {
   right: 0;
   border-radius: 0 4px 4px 0;
 }
-/* line 217, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .bound .page:nth-child(odd):hover {
   -webkit-transform: rotateY(-10deg);
   transform: rotateY(-10deg);
 }
-/* line 220, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .bound .page:nth-child(odd):hover:before {
   background: rgba(0, 0, 0, 0.03);
 }
-/* line 224, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .bound .page:nth-child(odd):before {
   background: transparent;
 }
-/* line 228, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .bound .page:nth-child(even) {
   pointer-events: none;
   -webkit-transform: rotateY(180deg);
@@ -257,55 +258,55 @@ a.global-button {
   left: 0;
   border-radius: 4px 0 0 4px;
 }
-/* line 236, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .bound .page:nth-child(even):before {
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 240, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 .bound .page.grabbing {
   -webkit-transition: none;
   transition: none;
 }
-/* line 245, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .bound .page.flipped:nth-child(odd) {
   pointer-events: none;
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
-/* line 249, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .bound .page.flipped:nth-child(odd):before {
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 253, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 .bound .page.flipped:nth-child(even) {
   pointer-events: all;
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-/* line 257, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .bound .page.flipped:nth-child(even):hover {
   -webkit-transform: rotateY(10deg);
   transform: rotateY(10deg);
 }
-/* line 260, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .bound .page.flipped:nth-child(even):hover:before {
   background: rgba(0, 0, 0, 0.03);
 }
-/* line 264, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .bound .page.flipped:nth-child(even):before {
   background: transparent;
 }
 
-/* line 272, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 * {
   box-sizing: border-box;
 }
-/* line 274, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 * :before, *:after {
   box-sizing: border-box;
 }
 
-/* line 279, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -317,7 +318,7 @@ body {
   justify-content: center;
 }
 
-/* line 297, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 .alien {
   height: 100px;
   display: block;
@@ -328,7 +329,7 @@ body {
   box-shadow: 1px 1px 8px #9C9C9A;
 }
 
-/* line 307, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 #name {
   margin-top: 8%;
   font-family: "Special Elite", cursive;
@@ -336,7 +337,7 @@ body {
   text-align: center;
 }
 
-/* line 313, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 .self {
   height: 220px;
   display: block;
@@ -344,20 +345,20 @@ body {
   margin-top: 8%;
 }
 
-/* line 320, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 .author {
   text-align: center;
   font-family: "Special Elite", cursive;
 }
 
-/* line 325, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .varidada, .starry, .lollipop, .bouncing {
   display: block;
   margin: auto;
   margin-top: 5%;
 }
 
-/* line 331, ../sass/style.scss */
+/* line 332, ../sass/style.scss */
 .page {
   /*color: transparent;*/
   color: black;
@@ -367,82 +368,82 @@ body {
   /*background: center no-repeat;*/
   /*background-size: contain;*/
 }
-/* line 339, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .page:nth-child(3), .page:nth-child(5), .page:nth-child(7), .page:nth-child(9), .page:nth-child(11), .page:nth-child(13), .page:nth-child(15), .page:nth-child(17), .page:nth-child(19), .page:nth-child(21) {
   background-position: center;
 }
-/* line 342, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .page:nth-child(1) {
   background-color: transparent;
   /*background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_cover_f.jpg');*/
 }
-/* line 346, ../sass/style.scss */
+/* line 347, ../sass/style.scss */
 .page:nth-child(2), .page:nth-child(3) {
   background-color: #FFFDF7;
   /* #676161 */
 }
-/* line 350, ../sass/style.scss */
+/* line 351, ../sass/style.scss */
 .page:nth-child(4), .page:nth-child(5) {
   background-color: #74706F;
 }
-/* line 353, ../sass/style.scss */
+/* line 354, ../sass/style.scss */
 .page:nth-child(6), .page:nth-child(7) {
   background-color: #7F7B7A;
 }
-/* line 356, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 .page:nth-child(8), .page:nth-child(9) {
   background-color: #9C9C9A;
 }
-/* line 359, ../sass/style.scss */
+/* line 360, ../sass/style.scss */
 .page:nth-child(10), .page:nth-child(11) {
   background-color: #B9B2A1;
 }
-/* line 362, ../sass/style.scss */
+/* line 363, ../sass/style.scss */
 .page:nth-child(12), .page:nth-child(13), .page:nth-child(14), .page:nth-child(15) {
   background-color: #FFFDF7;
 }
-/* line 365, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .page:nth-child(16), .page:nth-child(17) {
   background-color: #B5BBC8;
 }
-/* line 368, ../sass/style.scss */
+/* line 369, ../sass/style.scss */
 .page:nth-child(18), .page:nth-child(19) {
   background-color: #A3A7B3;
 }
-/* line 371, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
 .page:nth-child(20), .page:nth-child(21) {
   background-color: #8A8598;
 }
-/* line 374, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 .page:nth-child(22) {
   background-color: transparent;
   /*background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_cover_b.jpg');*/
 }
 
 /* --- Sections --- */
-/* line 383, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 #about {
   padding-top: 2em;
 }
 
-/* line 386, ../sass/style.scss */
+/* line 387, ../sass/style.scss */
 #portfolio {
   padding-top: 5em;
 }
 
 /*** About Section ***/
-/* line 391, ../sass/style.scss */
+/* line 392, ../sass/style.scss */
 .instruction {
   margin-top: 5%;
   margin-left: 45%;
 }
 
-/* line 396, ../sass/style.scss */
+/* line 397, ../sass/style.scss */
 #about {
   display: flex;
   min-height: 100vh;
 }
-/* line 399, ../sass/style.scss */
+/* line 400, ../sass/style.scss */
 #about .wrapper {
   max-width: 80%;
   margin: auto;
@@ -450,12 +451,12 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* line 407, ../sass/style.scss */
+  /* line 408, ../sass/style.scss */
   #about .wrapper {
     margin-right: 24%;
   }
 }
-/* line 412, ../sass/style.scss */
+/* line 413, ../sass/style.scss */
 .about__intro {
   border-left: 2px solid;
   padding-left: 2.2em;
@@ -463,7 +464,7 @@ body {
   max-width: 25em;
 }
 
-/* line 419, ../sass/style.scss */
+/* line 420, ../sass/style.scss */
 #about:hover .global-button.rotated::before {
   animation: move_arrow_v 2500ms ease-in infinite forwards;
 }
@@ -493,13 +494,13 @@ body {
 }
 /*** Portfolio Section ***/
 /* Filters */
-/* line 457, ../sass/style.scss */
+/* line 458, ../sass/style.scss */
 #portfolio > .filters {
   text-align: right;
   padding: 0 20px;
 }
 
-/* line 462, ../sass/style.scss */
+/* line 463, ../sass/style.scss */
 .filters__title {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -507,13 +508,13 @@ body {
   vertical-align: baseline;
 }
 
-/* line 469, ../sass/style.scss */
+/* line 470, ../sass/style.scss */
 .filters__list {
   display: inline-block;
   vertical-align: baseline;
 }
 
-/* line 474, ../sass/style.scss */
+/* line 475, ../sass/style.scss */
 .filters__label {
   color: #dcd5b2;
   display: inline-block;
@@ -521,27 +522,27 @@ body {
   margin-left: .8em;
   cursor: pointer;
 }
-/* line 476, ../sass/style.scss */
+/* line 477, ../sass/style.scss */
 .filters__label:not(:first-child)::before {
   color: #dcd5b2;
 }
-/* line 483, ../sass/style.scss */
+/* line 484, ../sass/style.scss */
 .filters__label.is-active {
   color: inherit;
 }
-/* line 486, ../sass/style.scss */
+/* line 487, ../sass/style.scss */
 .filters__label:not(:first-child)::before {
   content: "/";
   margin-right: .8em;
 }
 
 /* Projects */
-/* line 494, ../sass/style.scss */
+/* line 495, ../sass/style.scss */
 .portfolio__project-wrapper {
   padding: 0 10px;
 }
 
-/* line 498, ../sass/style.scss */
+/* line 499, ../sass/style.scss */
 .portfolio__project {
   position: relative;
   height: auto;
@@ -552,19 +553,19 @@ body {
   overflow: hidden;
 }
 
-/* line 508, ../sass/style.scss */
+/* line 509, ../sass/style.scss */
 .portfolio__project__preview {
   position: relative;
   top: 0;
   height: auto;
 }
-/* line 512, ../sass/style.scss */
+/* line 513, ../sass/style.scss */
 .portfolio__project__preview > img {
   width: 100%;
   height: auto;
 }
 
-/* line 518, ../sass/style.scss */
+/* line 519, ../sass/style.scss */
 .portfolio__project__description {
   position: absolute;
   top: 100%;
@@ -574,7 +575,7 @@ body {
   background: #e3dfd8;
 }
 
-/* line 527, ../sass/style.scss */
+/* line 528, ../sass/style.scss */
 .portfolio__project__name {
   font-family: 'Raleway', sans-serif;
   font-size: 1.1em;
@@ -582,23 +583,23 @@ body {
   margin-bottom: .2em;
 }
 
-/* line 534, ../sass/style.scss */
+/* line 535, ../sass/style.scss */
 .portfolio__project__category {
   font-size: .9em;
   color: #dcd5b2;
   margin-bottom: .6em;
 }
 
-/* line 540, ../sass/style.scss */
+/* line 541, ../sass/style.scss */
 .portfolio__project__preview, .portfolio__project__description {
   transition: all 600ms ease;
 }
 
-/* line 545, ../sass/style.scss */
+/* line 546, ../sass/style.scss */
 .portfolio__project:hover .portfolio__project__description {
   transform: translateY(-100%);
 }
-/* line 548, ../sass/style.scss */
+/* line 549, ../sass/style.scss */
 .portfolio__project:hover .portfolio__project__preview {
   transform: translateY(-2.5em);
 }
