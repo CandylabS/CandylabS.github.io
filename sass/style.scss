@@ -153,8 +153,8 @@ a.global-button {
 .page {
   width: 36vw;
   height: 27vw;
-  background-colour: #fff;
-  float: left;
+  background-color: #f2f1f0;//#f7f4eb;
+  // float: left;
   margin-bottom: 0.5em;
   &:first-child {
     float: right;
@@ -165,8 +165,8 @@ a.global-button {
 }
 
 .bound {
-  -webkit-perspective: 400vw;
-  perspective: 400vw;
+  -webkit-perspective: 500vw;
+  perspective: 500vw;
   .pages {
     width: 72vw;
     height: 27vw;
@@ -324,6 +324,15 @@ body {
   margin-top: 8%;
 }
 
+.photo {
+  height: 270px;
+  display: block;
+  margin: auto;
+  margin-top: 8%;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px #9C9C9A;
+}
+
 .author {
   text-align: center;
   font-family: $font-author;
@@ -340,43 +349,9 @@ body {
   color: black;
   font-family: $font-text;
   font-weight: 300;
-  background-color: #FFFDF7;
+  background-color: #f7f4eb;
   background-image: url('https://candylabs.github.io/images/sprinkles.png');
-  &:nth-child(3), &:nth-child(5), &:nth-child(7), &:nth-child(9), &:nth-child(11), &:nth-child(13), &:nth-child(15), &:nth-child(17), &:nth-child(19), &:nth-child(21) {
-    background-position: center;
-  }
-  &:nth-child(1) {
-    background-color: transparent;
-  }
-  &:nth-child(2), &:nth-child(3) {
-    background-color: #FFFDF7;
-    /* #676161 */
-  }
-  &:nth-child(4), &:nth-child(5) {
-    background-color: #74706F;
-  }
-  &:nth-child(6), &:nth-child(7) {
-    background-color: #7F7B7A;
-  }
-  &:nth-child(8), &:nth-child(9) {
-    background-color: #9C9C9A;
-  }
-  &:nth-child(10), &:nth-child(11) {
-    background-color: #B9B2A1;
-  }
-  &:nth-child(12), &:nth-child(13), &:nth-child(14), &:nth-child(15) {
-    background-color: #FFFDF7;
-  }
-  &:nth-child(16), &:nth-child(17) {
-    background-color: #B5BBC8;
-  }
-  &:nth-child(18), &:nth-child(19) {
-    background-color: #A3A7B3;
-  }
-  &:nth-child(20), &:nth-child(21) {
-    background-color: #8A8598;
-  }
-  &:nth-child(22) {
+  &:nth-child(1), &:nth-child(22) {
     background-color: transparent;
   }
 }
@@ -385,7 +360,7 @@ body {
 /* --- Sections --- */
 
 #about {
-  padding-left: 14%;
+  padding-right: 18%;
   padding-top: 6em;
 }
 #portfolio{
@@ -406,19 +381,6 @@ body {
     margin: auto;
     margin-right: 10%;
   }
-}
-
-@media (min-width: 768px) {
-  #about .wrapper {
-    margin-right: 24%;
-  }
-}
-
-.about__intro {
-  border-left: 2px solid;
-  padding-left: 2.2em;
-  margin-bottom: 1em;
-  max-width: 25em;
 }
 
 #about:hover .global-button.rotated::before {
