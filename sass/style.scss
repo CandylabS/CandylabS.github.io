@@ -378,7 +378,7 @@ body {
 
 #about {
   padding-left: 14%;
-  padding-top: 2em;
+  padding-top: 6em;
 }
 #portfolio{
   padding-top: 5em;
@@ -386,7 +386,7 @@ body {
 
 /*** About Section ***/
 .instruction {
-  margin-top: 7%;
+  margin-top: 5%;
   margin-left: 45%;
 }
 
@@ -518,10 +518,15 @@ body {
 .portfolio__project__preview {
   position: relative;
   top: 0;
-  height: auto;
+  width: 200px;
+  height: 150px;
   > img {
-    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 20%;
+    width: 50%;
     height: auto;
+    border-radius: 5px;
   }
 }
 
