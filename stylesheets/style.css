@@ -328,7 +328,7 @@ body {
 
 /* line 314, ../sass/style.scss */
 #name {
-  margin-top: 8%;
+  margin-top: 12%;
   font-family: "Special Elite", cursive;
   font-size: 24px;
   text-align: center;
@@ -340,9 +340,18 @@ body {
   display: block;
   margin: auto;
   margin-top: 8%;
+  border-radius: 8px;
 }
 
-/* line 327, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
+.text {
+  color: #676161;
+  margin-left: 14%;
+  margin-right: 12%;
+  margin-top: 12%;
+}
+
+/* line 335, ../sass/style.scss */
 .photo {
   height: 270px;
   display: block;
@@ -352,20 +361,21 @@ body {
   box-shadow: 1px 1px 5px #9C9C9A;
 }
 
-/* line 336, ../sass/style.scss */
+/* line 344, ../sass/style.scss */
 .author {
   text-align: center;
   font-family: "Special Elite", cursive;
+  padding-top: 15px;
 }
 
-/* line 341, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 .varidada, .starry, .lollipop, .bouncing {
   display: block;
   margin: auto;
   margin-top: 5%;
 }
 
-/* line 347, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 .page {
   /*color: transparent;*/
   color: black;
@@ -374,43 +384,43 @@ body {
   background-color: #f7f4eb;
   background-image: url("https://candylabs.github.io/images/sprinkles.png");
 }
-/* line 354, ../sass/style.scss */
+/* line 363, ../sass/style.scss */
 .page:nth-child(1), .page:nth-child(22) {
-  background-color: transparent;
+  background-color: rgba(247, 244, 235, 0.75);
 }
 
 /* --- Sections --- */
-/* line 362, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 #about {
   padding-right: 18%;
   padding-top: 6em;
 }
 
-/* line 366, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 #portfolio {
   padding-top: 5em;
 }
 
 /*** About Section ***/
-/* line 371, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 .instruction {
   margin-top: 5%;
   margin-left: 45%;
 }
 
-/* line 376, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 #about {
   display: flex;
   min-height: 100vh;
 }
-/* line 379, ../sass/style.scss */
+/* line 388, ../sass/style.scss */
 #about .wrapper {
   max-width: 80%;
   margin: auto;
   margin-right: 10%;
 }
 
-/* line 386, ../sass/style.scss */
+/* line 395, ../sass/style.scss */
 #about:hover .global-button.rotated::before {
   animation: move_arrow_v 2500ms ease-in infinite forwards;
 }
@@ -440,27 +450,27 @@ body {
 }
 /*** Portfolio Section ***/
 /* Filters */
-/* line 424, ../sass/style.scss */
+/* line 433, ../sass/style.scss */
 #portfolio > .filters {
   margin-right: 10%;
   text-align: right;
   padding: 0 20px;
 }
 
-/* line 430, ../sass/style.scss */
+/* line 439, ../sass/style.scss */
 .filters__title {
   display: inline-block;
   vertical-align: baseline;
   color: #676161;
 }
 
-/* line 436, ../sass/style.scss */
+/* line 445, ../sass/style.scss */
 .filters__list {
   display: inline-block;
   vertical-align: baseline;
 }
 
-/* line 441, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 .filters__label {
   font-family: "Jura", sans-serif;
   font-weight: 300;
@@ -470,22 +480,22 @@ body {
   margin-left: .8em;
   cursor: pointer;
 }
-/* line 445, ../sass/style.scss */
+/* line 454, ../sass/style.scss */
 .filters__label:not(:first-child)::before {
   color: #ECE9E6;
 }
-/* line 452, ../sass/style.scss */
+/* line 461, ../sass/style.scss */
 .filters__label.is-active {
   color: #676161;
 }
-/* line 455, ../sass/style.scss */
+/* line 464, ../sass/style.scss */
 .filters__label:not(:first-child)::before {
   content: "/";
   margin-right: .8em;
 }
 
 /* Projects */
-/* line 463, ../sass/style.scss */
+/* line 472, ../sass/style.scss */
 .portfolio__project-wrapper {
   padding: 0 10px;
   margin-top: 2%;
@@ -496,7 +506,7 @@ body {
   position: absolute;
 }
 
-/* line 473, ../sass/style.scss */
+/* line 482, ../sass/style.scss */
 .portfolio__project {
   position: relative;
   margin-right: 15px;
@@ -513,14 +523,14 @@ body {
   box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* line 490, ../sass/style.scss */
+/* line 499, ../sass/style.scss */
 .portfolio__project__preview {
   position: relative;
   top: 0;
   width: 200px;
   height: 170px;
 }
-/* line 495, ../sass/style.scss */
+/* line 504, ../sass/style.scss */
 .portfolio__project__preview > img {
   display: block;
   margin: auto;
@@ -530,7 +540,7 @@ body {
   border-radius: 5px;
 }
 
-/* line 505, ../sass/style.scss */
+/* line 514, ../sass/style.scss */
 .portfolio__project__description {
   position: absolute;
   top: 100%;
@@ -540,7 +550,7 @@ body {
   background: #e3dfd8;
 }
 
-/* line 514, ../sass/style.scss */
+/* line 523, ../sass/style.scss */
 .portfolio__project__name {
   font-family: "Yatra One", cursive;
   font-weight: 600;
@@ -550,7 +560,7 @@ body {
   margin-bottom: .2em;
 }
 
-/* line 523, ../sass/style.scss */
+/* line 532, ../sass/style.scss */
 .portfolio__project__category {
   font-family: "Jura", sans-serif;
   font-weight: 300;
@@ -559,16 +569,16 @@ body {
   margin-bottom: .6em;
 }
 
-/* line 531, ../sass/style.scss */
+/* line 540, ../sass/style.scss */
 .portfolio__project__preview, .portfolio__project__description {
   transition: all 600ms ease;
 }
 
-/* line 536, ../sass/style.scss */
+/* line 545, ../sass/style.scss */
 .portfolio__project:hover .portfolio__project__description {
   transform: translateY(-90%);
 }
-/* line 539, ../sass/style.scss */
+/* line 548, ../sass/style.scss */
 .portfolio__project:hover .portfolio__project__preview {
   transform: translateY(-2.5em);
 }

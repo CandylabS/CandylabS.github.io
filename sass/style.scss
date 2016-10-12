@@ -312,7 +312,7 @@ body {
 }
 
 #name {
-  margin-top: 8%;
+  margin-top: 12%;
   font-family: $font-cover;
   font-size: 24px;
   text-align: center;
@@ -322,6 +322,14 @@ body {
   display: block;
   margin: auto;
   margin-top: 8%;
+  border-radius: 8px;
+}
+
+.text {
+  color: #676161;
+  margin-left: 14%;
+  margin-right: 12%;
+  margin-top: 12%;
 }
 
 .photo {
@@ -336,6 +344,7 @@ body {
 .author {
   text-align: center;
   font-family: $font-author;
+  padding-top: 15px;
 }
 
 .varidada, .starry, .lollipop, .bouncing {
@@ -352,7 +361,7 @@ body {
   background-color: #f7f4eb;
   background-image: url('https://candylabs.github.io/images/sprinkles.png');
   &:nth-child(1), &:nth-child(22) {
-    background-color: transparent;
+    background-color: transparentize(#f7f4eb, 0.25);
   }
 }
 
