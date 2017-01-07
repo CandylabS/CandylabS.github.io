@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<title>shspage</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /> -->
+	<style type="text/css">
+div.main {
+    position:absolute;
+    top:50%;
+    margin-top:-250px;
+    margin-bottom:-250px;
+    width:100%;
+    text-align:center;
+    font-size:90%;
+    font-family:Meiryo,sans-serif;
+}
+</style>
+	<script type="text/javascript" src="paper-full.min.js"></script>
+	<script type="text/javascript" src="p02_circlesOnSphere.js"></script>
+	<script type="text/javascript">
+paper.install( window );
+
+window.onload = function(){
+    paper.setup("canvas");
+    var tool = new Tool();
+
+    var rects = [];
+    var x_ini = 10;
+    var y_ini = 10;
+    var x = x_ini; 
+    var y = y_ini;
+    var w = 92;
+    var w_stage = 380;
+    var margin_stage = 10;
+    var interval = 4;
+    
+    for( var i = 0; i < 8; i++){
+        rects.push( new Path.Rectangle({
+            topLeft:[x, y],
+            bottomRight:[x + w, y + w],
+            radius:10,
+            strokeColor:"black"
+        }));
+        y += w + interval;
+
+        if( i == 3 ){
+            x = x_ini + w + w_stage + margin_stage * 2;
+            y = y_ini;
+        }
+    }
+
+    var funcs = [
+        circlesOnSphere
+        ];
+	// var imgs = [
+	// 	"p01_spiralsphere.png",
+	// 	"p02_circlesonsphere.png",
+	// 	"p03_sunflower.png",
+	// 	"p04_lissajous.png",
+	// 	"p05_noise1.png"
+	// 	];
+
+
+    x = x_ini;
+    y = y_ini;
+    var thumbs = [];
+    var m = w / w_stage;
+  //   for( var i = 0; i < funcs.length; i++){
+		// if(i == 4){
+		// 	y = y_ini;
+		// 	x = x_ini + w_stage + w + margin_stage * 2;
+		// }
+  //       //thumbs.push( new funcs[i](new Point(x + w / 2, y + w / 2), m) );
+		// var thumb = new Raster("img/js/" + imgs[i]);
+		// thumb.position = new Point(x + w / 2, y + w / 2);
+  //       y += w + interval;
+  //   }
+
+    // rounded rectangle
+    x = x_ini + w + margin_stage;
+    var stage = new Path.Rectangle({
+        topLeft:[x, y_ini],
+        bottomRight:[x + w_stage, y_ini + w_stage],
+        radius:10,
+        strokeColor:"black"
+        });
+    
+    // text
+    var text = new PointText( new Point(x + w_stage / 2, y_ini + w_stage - 10));
+    text.justification = "center";
+    text.fillColor = "black";
+    text.content = "click to stop";
+    
+    var obj = new funcs[0](new Point(x + w_stage / 2, y_ini + w_stage / 2));
+    var frameHandler = obj.frameHandler;
+    view.attach("frame", frameHandler);
+    
+    var g_animate = true;
+    
+    // mousedown
+    tool.onMouseDown = function(evt){
+        if( stage.contains( evt.point )){
+            g_animate = ! g_animate;
+            if(g_animate){
+                view.attach("frame", frameHandler);
+            } else {
+                view.detach("frame");
+            }
+            text.content = "click to " + (g_animate ? "stop" : "start");
+        } else {
+            for( var i = 0; i < funcs.length; i++){
+                if( rects[i].contains( evt.point )){
+                    view.detach("frame");
+                    obj.clearStage();
+                    obj = new funcs[i](new Point(x + w_stage / 2, y_ini + w_stage / 2));
+                    frameHandler = obj.frameHandler;
+                    view.attach("frame", frameHandler);
+                    g_animate = true;
+                    text.content = "click to stop";
+                    break;
+                }
+            }
+        }
+    }
+}
+	</script>
+</head>
+<body style="background:white">
+<div class="main">
+	<canvas id="canvas" width="620" height="420"></canvas><br>
+<img src="img/logo_w420.gif">
+<div>Illustrator scripts [ <a href="aijs/">Japanese</a> ] / [ <a href="aijs/en/">English</a> ]</div>
+<!-- 
+<div>&nbsp;</div>
+<div><a href="https://twitter.com/shspage">Twitter</a>(ja) | <a href="https://twitter.com/shspage_en">Twitter</a>(en) | <a href="https://github.com/shspage">GitHub</a> | <a href="http://d.hatena.ne.jp/shspage/">hatena</a>(ja) | <a href="http://shspage.blogspot.jp/">blogger</a>(en)</div>
+ -->
+</div>
+</body>
+</html>
