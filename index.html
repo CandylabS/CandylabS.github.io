@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<title>shdy.cc</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<style type="text/css">
+div.main {
+    position:absolute;
+    top:50%;
+    margin-top:-250px;
+    margin-bottom:-250px;
+    width:100%;
+    text-align:center;
+    font-size:90%;
+    font-family:Meiryo,sans-serif;
+}
+</style>
+	<script type="text/javascript" src="lib/paper-full.min.js"></script>
+	<script type="text/javascript" src="js/circlesOnSphere.js"></script>
+	<script type="text/javascript">
+paper.install( window );
+
+window.onload = function(){
+    paper.setup("canvas");
+    var tool = new Tool();
+
+    var x_ini = 10;
+    var y_ini = 10;
+    var x = x_ini; 
+    var y = y_ini;
+    var w = 92;
+    var w_stage = 380;
+    var margin_stage = 10;
+
+    x = x_ini;
+    y = y_ini;
+    var m = w / w_stage;
+
+    // rounded rectangle
+    x = x_ini + w + margin_stage;
+    var stage = new Path.Rectangle({
+        topLeft:[x, y_ini],
+        bottomRight:[x + w_stage, y_ini + w_stage],
+        radius:10
+        });
+    
+    var obj = new circlesOnSphere(new Point(x + w_stage / 2, y_ini + w_stage / 2));
+    var frameHandler = obj.frameHandler;
+    view.attach("frame", frameHandler);
+    
+    var g_animate = true;
+    
+    // mouseEnter
+    // tool.onMouseMove = function(evt) {
+    //     if( stage.contains( evt.point )) {
+    //         console.log("enter!");
+    //         // obj.o = evt.point;
+    //         // console.log(obj.o);
+    //     }
+    // }
+
+    // mousedown
+    tool.onMouseDown = function(evt){
+        if( stage.contains( evt.point )){
+            g_animate = ! g_animate;
+            if(g_animate){
+                view.attach("frame", frameHandler);
+            } else {
+                view.detach("frame");
+            }
+            text.content = "click to " + (g_animate ? "stop" : "start");
+        }
+    }
+}
+	</script>
+</head>
+<body style="background:#222222">
+<div class="main">
+    <canvas id="canvas" width="620" height="420"></canvas><br>
+<div>[ <a href="view/main.html#about">About</a> ] / [ <a href="view/main.html#portfolio">Work</a> ]</div>
+<div>[ <a href="view/portfolio.html">Test 1</a> ] / [ <a href="view/player.html">Test 2</a> ]</div>
+</div>
+</body>
+</html>

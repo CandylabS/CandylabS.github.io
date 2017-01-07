@@ -1,0 +1,37 @@
+html, body {
+  font-size: 1px;   /*background gradient*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html a, body a {
+  display: block;
+  width: 100vw;
+  height: 3em;
+  line-height: 60em;
+  font-family: Sans-Serif;
+  color: darkgrey;
+  font-size: 20rem;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+}
+
+.IT-wrap {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.RP-wrap {
+  width: 100vw;
+  height: 200vh;
+}
+
+.light-gradient-bg {
+  background-color: #eaeceb;
+  background: url("http://api.thumbr.it/whitenoise-400x400.png?background=EDEFEE&noise=444444&density=66&opacity=5") 0 0/200rem 200rem;
+  background: url("http://api.thumbr.it/whitenoise-400x400.png?background=FFFFFF00&noise=444444&density=66&opacity=5") 0 0/200rem 200rem, -webkit-linear-gradient(top, #f0f2f1 0%, #e7e8e7 100%);
+  background: url("http://api.thumbr.it/whitenoise-400x400.png?background=FFFFFF00&noise=444444&density=66&opacity=5") 0 0/200rem 200rem, linear-gradient(top, #f0f2f1 0%, #e7e8e7 100%);
+  background: url("http://api.thumbr.it/whitenoise-400x400.png?background=FFFFFF00&noise=444444&density=66&opacity=5") 0 0/200rem 200rem, linear-gradient(to bottom, #f0f2f1 0%, #e7e8e7 100%);
+}

@@ -24,7 +24,7 @@ html b, body b {
 }
 
 .light-gradient-bg {
-  background-color: #eaeceb;
+  background-color: black; /*#eaeceb;*/
   background: url("http://api.thumbr.it/whitenoise-400x400.png?background=EDEFEE&noise=444444&density=66&opacity=5") 0 0/200rem 200rem;
   background: url("http://api.thumbr.it/whitenoise-400x400.png?background=FFFFFF00&noise=444444&density=66&opacity=5") 0 0/200rem 200rem, -webkit-linear-gradient(top, #f0f2f1 0%, #e7e8e7 100%);
   background: url("http://api.thumbr.it/whitenoise-400x400.png?background=FFFFFF00&noise=444444&density=66&opacity=5") 0 0/200rem 200rem, linear-gradient(top, #f0f2f1 0%, #e7e8e7 100%);
