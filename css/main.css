@@ -6,7 +6,7 @@ html, body {
 
 html a, body a {
   display: block;
-  width: 100vw;
+  /*width: 100vw;*/
   height: 3em;
   line-height: 60em;
   font-family: Sans-Serif;
@@ -20,7 +20,7 @@ html a, body a {
 .IT-wrap {
   top: 0;
   margin-left: 5vw;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
 }
 
