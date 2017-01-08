@@ -8,13 +8,20 @@ html a, body a {
   display: block;
   /*width: 100vw;*/
   height: 3em;
-  line-height: 60em;
   font-family: Sans-Serif;
   color: darkgrey;
   font-size: 20rem;
   font-weight: 900;
   text-align: center;
   cursor: pointer;
+}
+
+.toggle1 {
+  line-height: 60em;
+}
+
+.toggle2 {
+  line-height: 10em;
 }
 
 .IT-wrap {
