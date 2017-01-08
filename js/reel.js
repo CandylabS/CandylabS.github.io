@@ -120,7 +120,7 @@
        transformOrigin: '50% 50%'
      })
      .set(rp_img, {
-       orce3D: true
+       force3D: true
      })
 
    .addLabel('label--0X', '+=0')

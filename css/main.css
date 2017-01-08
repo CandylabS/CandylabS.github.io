@@ -19,7 +19,8 @@ html a, body a {
 
 .IT-wrap {
   top: 0;
-  width: 100vw;
+  margin-left: 5vw;
+  width: 90vw;
   height: 100vh;
 }
 
