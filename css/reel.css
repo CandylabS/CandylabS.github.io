@@ -39,7 +39,7 @@ html b, body b {
 }
 
 .portfolio-items {
-  height: 520px;
+  height: 540px;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -66,7 +66,7 @@ html b, body b {
   left: 0;
   right: 0;
   bottom: 0;*/
-  margin: 90px 90px 0;
+  margin: 110px 90px 0;
   width: 360rem;
   height: 360rem;
   border-radius: 8rem;
