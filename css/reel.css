@@ -185,7 +185,7 @@ iframe {
   margin: auto;
   margin-left: -5%;
   margin-bottom: -5%;
-  height: 110%;
+  width: 110%;
   opacity: 0.95;
   -webkit-transition: margin 1.2s cubic-bezier(0.16, 0, 0, 0.95);
   transition: margin 1.2s cubic-bezier(0.16, 0, 0, 0.95);
