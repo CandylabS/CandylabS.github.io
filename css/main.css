@@ -8,25 +8,52 @@ html a, body a {
   display: block;
   /*width: 100vw;*/
   height: 3em;
-  font-family: Sans-Serif;
+  font-family: 'Raleway Dots', cursive;
   color: darkgrey;
-  font-size: 20rem;
+  font-size: 18rem;
   font-weight: 900;
   text-align: center;
+  text-decoration: none;
   cursor: pointer;
 }
 
-/*.image-link {
-  font-size: 10rem;
-}*/
+a:hover {
+  font-size: 20rem;
+  color:white;
+  text-shadow: 1px 1px 4px darkgray;
+}
 
+.introduction {
+  margin-left: 2.5vw;
+/*  border: 1px solid #333;
+  border-radius: 5px;*/
+  width: 80vw;
+  height: 70vh;
+}
 .toggle1 {
-  line-height: 60em;
+  /*line-height: 60em;*/
+  margin-top: 10%;
+  margin-left: 38%;
+  line-height: 36px;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #D4D4D4;
+  border-radius: 5px;
+  text-shadow: 1px 1px 4px #C7C7C7;
 }
 
 .toggle2 {
-  line-height: 10em;
+  /*line-height: 60em;*/
+  margin-top: 3%;
+  margin-left: 38%;
+  line-height: 36px;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #D4D4D4;
+  border-radius: 5px;
+  text-shadow: 1px 1px 4px #C7C7C7;
 }
+
 
 .IT-wrap {
   top: 0;
