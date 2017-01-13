@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
   //// VIMEO–player API //
-  var idPlayer = new Vimeo.Player('video');
-  idPlayer.pause();
-  setTimeout(function() {
-    idPlayer.pause();
-  }, 1000); //SAFARI  play on -load BUG
+  // var idPlayer = new Vimeo.Player('video');
+  // idPlayer.pause();
+  // setTimeout(function() {
+  //   idPlayer.pause();
+  // }, 1000); //SAFARI  play on -load BUG
 
 
   var RP_cont = $(".reel-player-cont"),
@@ -82,7 +82,6 @@ $(document).ready(function() {
        //console.log(o); 
        }); */
   };
-
 
   RP_cont.hover(function() {
     // if (mRP_cont != $(this)) {

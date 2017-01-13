@@ -183,9 +183,9 @@ iframe {
   bottom: 0;
   right: 0;
   margin: auto;
-  margin-left: -5%;
+  margin-left: 5%;
   margin-bottom: 18%;
-  width: 110%;
+  width: 90%;
   opacity: 0.95;
   -webkit-transition: margin 1.2s cubic-bezier(0.16, 0, 0, 0.95);
   transition: margin 1.2s cubic-bezier(0.16, 0, 0, 0.95);
@@ -193,7 +193,7 @@ iframe {
           transition-delay: 0.1s;
 }
 .player-img.active {
-  margin-bottom: 20%;
+  margin-bottom: 22%;
   opacity: 0.35;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
