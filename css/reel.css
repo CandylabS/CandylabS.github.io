@@ -351,6 +351,11 @@ iframe {
   color: grey;
 }
 
+/*.video {
+  text-decoration: none;
+  background-color: none;
+}*/
+
 /* Volume Slider END */
 .center-button {
   position: relative;
@@ -433,6 +438,7 @@ iframe {
   right: 0;
   height: 100%;
   width: 40%;
+  text-decoration: none;
 }
 .btm-right-cont i {
   position: absolute;
