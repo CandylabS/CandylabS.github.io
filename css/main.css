@@ -16,6 +16,10 @@ html a, body a {
   cursor: pointer;
 }
 
+/*.image-link {
+  font-size: 10rem;
+}*/
+
 .toggle1 {
   line-height: 60em;
 }

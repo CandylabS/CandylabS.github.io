@@ -7,3 +7,14 @@ $('.video').magnificPopup({
               '</div>'
   }
 });
+
+$('.gallery').magnificPopup({ 
+  
+  type: 'image',
+  delegate: 'div',
+  removalDelay: 300,
+  mainClass: 'mfp-with-fade',
+  
+  gallery:{enabled:true}
+  
+});
