@@ -106,6 +106,7 @@ $(document).ready(function() {
 
     $(this).toggleClass('active');
     $(this).find(".player-img").toggleClass('active');
+    $(this).find(".span").toggleClass('active');
 
 
     // RPhover_tl = new TimelineMax({
