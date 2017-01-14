@@ -30,6 +30,11 @@ a:hover {
   width: 80vw;
   height: 70vh;
 }
+.selfie {
+  margin-top: 5%;
+  margin-left: 35vw;
+  height: 100px;
+}
 .toggle1 {
   /*line-height: 60em;*/
   margin-top: 10%;
