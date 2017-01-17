@@ -1,7 +1,7 @@
 // circles on sphere
 var circlesOnSphere = function(o, scale){
     
-    var big_radius = 160;
+    var big_radius = 130;
     var radius = 18;
     var number_of_circles = 90;
 
