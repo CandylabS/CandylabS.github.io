@@ -4,20 +4,26 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-html a, body a {
-  display: block;
+html body a, html body a {
+  /*display: block;*/
   /*width: 100vw;*/
   height: 3em;
   font-family: 'Muli', sans-serif; /*'Raleway Dots', cursive;*/
   color: #9C9C9A;
   font-size: 16rem;
   font-weight: 200;
-  text-align: center;
   text-decoration: none;
   cursor: pointer;
 }
 
-a:hover {
+/*toggle1, toggle2 {
+  text-align: center;
+}*/
+.link {
+  font-size: 12rem;
+}
+
+a.toggle1, a.toggle2:hover {
   font-size: 18rem;
   color:white;
   text-shadow: 1px 1px 4px darkgray;
@@ -34,9 +40,9 @@ html p, body p {
 }
 
 .text {
-  margin-top: 5vw;
+  margin-top: 1.5vw;
   margin-left: 15vw;
-  width: 50vw;
+  width: 52vw;
 }
 
 .introduction {
@@ -53,6 +59,7 @@ html p, body p {
 }
 .toggle1 {
   /*line-height: 60em;*/
+  text-align: center;
   margin-top: 10%;
   margin-left: 40%;
   line-height: 36px;
@@ -65,6 +72,7 @@ html p, body p {
 
 .toggle2 {
   /*line-height: 60em;*/
+  text-align: center;
   margin-top: 6%;
   margin-left: 40%;
   line-height: 36px;
