@@ -197,16 +197,26 @@ iframe {
   font-size: 12rem;
   font-weight: 300;
   font-family: 'Muli', Sans Serif;
-  margin-top: 22%;
+  margin-top: 21%;
   width: 20vw;
-  margin-left: 8%;
+  margin-left: 9%;
   margin-right: 10%;
   line-height: 1.5;
   opacity: 0;
+  -webkit-transition: margin 1.2s cubic-bezier(0.16, 0, 0, 0.95);
+  transition: margin 1.2s cubic-bezier(0.16, 0, 0, 0.95);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 .span.active {
   opacity: 1;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 0.25, 0, 1);
+          transition-timing-function: cubic-bezier(0.2, 0.25, 0, 1);
 }
 
 .player-img.active {
